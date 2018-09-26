@@ -1,0 +1,28 @@
+{
+  "name": "http-status-echo-server",
+  "version": "1.0.0",
+  "description": "A simple node server that generates responses with the specified http status code",
+  "main": "lib/index.js",
+  "repository": "https://github.com/greena13/http-status-echo-server",
+  "author": "Aleck Greenham <greenhama13@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "babel src -d lib",
+    "start": "node lib/index.js"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.0",
+    "@babel/core": "^7.1.0",
+    "@babel/plugin-transform-async-to-generator": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/register": "^7.0.0",
+    "eslint": "^5.6.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.0.0",
+    "@koa/cors": "^2.2.2",
+    "koa": "^2.5.3"
+  }
+}
